@@ -24,8 +24,4 @@ The InnovateTech Solutions website is designed to showcase the services, project
 
 To set up and run the website locally, follow these steps:
 
-1. **Clone the Repository:**
 
-   ```bash
-   git clone https://github.com/YazanZidan2001/online-store.git
-   cd online-store
