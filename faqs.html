@@ -7,12 +7,10 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <!-- Including Header -->
     <div w3-include-html="header.html"></div>
 
-    <!-- Main Content -->
     <main>
-        <section>
+        <section class="faqs">
             <h2>Frequently Asked Questions (FAQs)</h2>
             
             <div class="faq">
@@ -47,13 +45,17 @@
         </section>
     </main>
 
-    <!-- Including Footer -->
     <div w3-include-html="footer.html"></div>
 
-    <!-- Include.js script to handle w3-include-html -->
     <script src="assets/js/include.js"></script>
+    <script>includeHTML();</script>
     <script>
-        includeHTML();
+        document.querySelectorAll('.faq h3').forEach((faqHeader) => {
+            faqHeader.addEventListener('click', () => {
+                faqHeader.parentElement.classList.toggle('open');
+            });
+        });
     </script>
+    
 </body>
 </html>

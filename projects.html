@@ -7,33 +7,31 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <!-- Including Header -->
     <div w3-include-html="header.html"></div>
 
-    <!-- Main Content -->
     <main>
-        <section>
-            <h2>Our Notable Projects</h2>
-            <div class="project">
-                <h3>Online Store</h3>
-                <p>This web application offers a curated selection of Palestinian souvenirs, from handcrafted treasures to delicious foods, available for international customers. With easy browsing, efficient search, and secure checkout, we bring the essence of Palestinian culture to homes worldwide. Explore and purchase authentic souvenirs, connecting with the heritage of Palestine effortlessly.</p>
-                <p><a href="https://github.com/YazanZidan2001/online-store.git">View on GitHub</a></p>
-            </div>
-            <div class="project">
-                <h3>Hotel Management System</h3>
-                <p>The Hotel Management System (HMS) project aims to create a comprehensive platform to manage hotel operations efficiently. The system includes functionalities for customer and employee management, room reservations, housekeeping schedules, billing, and more. The backend is built using Spring Boot, and the APIs are documented using OAS 3.1.0 standards. The application is containerized using Docker and managed with Docker Compose.</p>
-                <p><a href="https://github.com/YazanZidan2001/hotel-management-system">View on GitHub</a></p>
+        <section class="projects">
+            <h2>Our Projects</h2>
+            <div class="grid-container">
+                <div class="project">
+                    <h3>Online Store</h3>
+                    <p>This web application offers a curated selection of Palestinian souvenirs, from handcrafted treasures to delicious foods, available for international customers. With easy browsing, efficient search, and secure checkout, we bring the essence of Palestinian culture to homes worldwide. Explore and purchase authentic souvenirs, connecting with the heritage of Palestine effortlessly.</p>
+                    <p><a href="https://github.com/YazanZidan2001/online-store.git">View on GitHub</a></p>
+                </div>
+                <div class="project">
+                    <h3>Hotel Management System</h3>
+                    <p>The Hotel Management System (HMS) project aims to create a comprehensive platform to manage hotel operations efficiently. The system includes functionalities for customer and employee management, room reservations, housekeeping schedules, billing, and more. The backend is built using Spring Boot, and the APIs are documented using OAS 3.1.0 standards. The application is containerized using Docker and managed with Docker Compose.</p>
+                    <p><a href="https://github.com/YazanZidan2001/hotel-management-system">View on GitHub</a></p>
+                </div>
             </div>
         </section>
     </main>
 
-    <!-- Including Footer -->
     <div w3-include-html="footer.html"></div>
-
-    <!-- Include.js script to handle w3-include-html -->
+    
     <script src="assets/js/include.js"></script>
-    <script>
-        includeHTML();
-    </script>
+    <script>includeHTML();</script>
 </body>
 </html>
+
+

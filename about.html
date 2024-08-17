@@ -7,38 +7,31 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <!-- Including Header -->
     <div w3-include-html="header.html"></div>
 
-    <!-- Main Content -->
     <main>
-        <section>
-            <h2>About InnovateTech Solutions</h2>
-            <p>InnovateTech Solutions is dedicated to providing top-notch web and application development services for startups and global companies alike. Our mission is to drive innovation and deliver cutting-edge solutions that help our clients achieve their digital goals.</p>
-        </section>
+        <section class="about">
+            <h2>About Us</h2>
+            <div class="team">
+                <div class="team-member">
+                    <img src="assets/images/yazan-zidan.jpg" alt="Yazan Zidan">
+                    <h3>Yazan Zidan</h3>
+                    <p>Email: <a href="mailto:yazoonzidan@gmail.com">yazoonzidan@gmail.com</a></p>
 
-        <section>
-            <h2>Our Team</h2>
-            <div class="team-member">
-                <img src="assets/images/yazan-zidan.jpg" alt="Yazan Zidan">
-                <h3>Yazan Zidan</h3>
-                <p>Email: <a href="mailto:yazoonzidan@gmail.com">yazoonzidan@gmail.com</a></p>
-            </div>
-            <div class="team-member">
-                <img src="assets/images/bader-mansra.jpg" alt="Bader Mansra">
-                <h3>Bader Mansra</h3>
-                <p>Email: <a href="mailto:bader.d2001@gmail.com">bader.d2001@gmail.com</a></p>
+                </div>
+                <div class="team-member">
+                    <img src="assets/images/bader-mansra.jpg" alt="Bader Mansra">
+                    <h3>Bader Mansra</h3>
+                    <p>Email: <a href="mailto:bader.d2001@gmail.com">bader.d2001@gmail.com</a></p>
+
+                </div>
             </div>
         </section>
     </main>
 
-    <!-- Including Footer -->
     <div w3-include-html="footer.html"></div>
-
-    <!-- Include.js script to handle w3-include-html -->
+    
     <script src="assets/js/include.js"></script>
-    <script>
-        includeHTML();
-    </script>
+    <script>includeHTML();</script>
 </body>
 </html>

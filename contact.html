@@ -7,12 +7,10 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <!-- Including Header -->
     <div w3-include-html="header.html"></div>
 
-    <!-- Main Content -->
     <main>
-        <section>
+        <section class="contact">
             <h2>Contact Us</h2>
             <p>If you have any questions or inquiries, feel free to reach out to us through the following channels:</p>
             <ul>
@@ -21,17 +19,25 @@
                 <li>GitHub: <a href="https://github.com/YazanZidan2001" target="_blank">https://github.com/YazanZidan2001</a></li>
                 <li>Facebook: <a href="https://www.facebook.com/profile.php?id=100079738397986" target="_blank">Yazan Zidan</a></li>
             </ul>
-            
+
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
         </section>
     </main>
 
-    <!-- Including Footer -->
     <div w3-include-html="footer.html"></div>
-
-    <!-- Include.js script to handle w3-include-html -->
+    
     <script src="assets/js/include.js"></script>
-    <script>
-        includeHTML();
-    </script>
+    <script>includeHTML();</script>
 </body>
 </html>

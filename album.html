@@ -3,25 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Album - InnovateTech Solutions</title>
+    <title>Photo Album - InnovateTech Solutions</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <!-- Including Header -->
     <div w3-include-html="header.html"></div>
 
-    <!-- Main Content -->
     <main>
-      
+        <section class="album">
+            <h2>Photo Album</h2>
+            <div class="gallery">
+                <img src="assets/images/photo1.jpg" alt="Photo 1">
+                <img src="assets/images/photo2.jpg" alt="Photo 2">
+                <img src="assets/images/photo3.jpg" alt="Photo 3">
+                <img src="assets/images/photo4.jpg" alt="Photo 4">
+            </div>
+        </section>
     </main>
 
-    <!-- Including Footer -->
     <div w3-include-html="footer.html"></div>
-
-    <!-- Include.js script to handle w3-include-html -->
+    
     <script src="assets/js/include.js"></script>
-    <script>
-        includeHTML();
-    </script>
+    <script>includeHTML();</script>
 </body>
 </html>

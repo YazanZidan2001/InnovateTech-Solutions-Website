@@ -1,9 +1,11 @@
+/* Global Styles */
 body {
     margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     display: flex;
     flex-direction: column;
-    min-height: auto;
-    font-family: Arial, sans-serif;
+    min-height: 100vh;
 }
 
 header, footer {
@@ -13,129 +15,150 @@ header, footer {
     padding: 1em 0;
 }
 
+header h1, footer p {
+    margin: 0;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007bff;
 }
 
 main {
-    min-height: 500px;
+    flex: 1;
     padding: 20px;
 }
 
-.team-member {
+/* Home Page Animations */
+.welcome h2 {
+    font-size: 2.5em;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.welcome p {
+    font-size: 1.2em;
+    animation: slideIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* About Page - Flexbox for Team */
+.team {
     display: flex;
-    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
     margin-bottom: 20px;
 }
 
 .team-member img {
     border-radius: 50%;
-    margin-right: 20px;
-    width: 100px;
-    height: 100px;
-}
-
-.team-member h3 {
-    margin: 0;
-    font-size: 1.5em;
-}
-
-.team-member p {
-    margin: 5px 0 0;
-}
-
-section {
-    margin-bottom: 20px;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    margin-bottom: 20px;
-}
-
-ul li h3 {
-    margin: 0;
-    font-size: 1.5em;
-}
-
-ul li p {
-    margin: 5px 0 0;
-}
-.project {
-    margin-bottom: 20px;
-}
-
-.project h3 {
-    margin: 0;
-    font-size: 1.5em;
-}
-
-.project p {
-    margin: 10px 0;
-}
-
-.project a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-.project a:hover {
-    text-decoration: underline;
-}
-.portfolio-item {
-    margin-bottom: 20px;
-}
-
-.portfolio-item h3 {
-    margin: 0;
-    font-size: 1.5em;
-}
-
-.portfolio-item p {
-    margin: 10px 0;
-}
-
-.portfolio-item a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-.portfolio-item a:hover {
-    text-decoration: underline;
-}
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
+    width: 150px;
+    height: 150px;
     margin-bottom: 10px;
 }
 
-ul li a {
-    color: #007bff;
-    text-decoration: none;
+/* Services Page - Hover Effects */
+.services ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-ul li a:hover {
-    text-decoration: underline;
+.services ul li {
+    background-color: #f4f4f4;
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
+.services ul li:hover {
+    background-color: #007bff;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Projects Page - CSS Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.project:hover {
+    background-color: #007bff;
+    color: white;
+    transform: scale(1.05);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Album Page - Responsive Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Portfolio Page - CSS Animations */
+.portfolio-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Contact Page - Form Styling */
 form {
     display: flex;
     flex-direction: column;
@@ -143,35 +166,90 @@ form {
 
 form label {
     margin-bottom: 5px;
+    font-weight: bold;
 }
 
 form input, form textarea {
     margin-bottom: 10px;
-    padding: 8px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     font-size: 1em;
 }
 
 form button {
-    padding: 10px 20px;
-    font-size: 1em;
-    color: #fff;
+    padding: 10px;
     background-color: #007bff;
+    color: white;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
 }
 
 form button:hover {
     background-color: #0056b3;
 }
+
+/* Privacy Policy and Terms Page - Typography */
+.privacy, .terms {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+.privacy h3, .terms h3 {
+    color: #007bff;
+    margin-top: 20px;
+}
+
+/* FAQs Page - Accordion Style */
 .faq {
     margin-bottom: 20px;
 }
 
 .faq h3 {
-    margin-bottom: 5px;
-    color: #007bff;
+    margin: 0;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .faq p {
+    display: none;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
     margin: 0;
+}
+
+.faq h3:hover {
+    background-color: #0056b3;
+}
+
+.faq.open p {
+    display: block;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .team {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
 }
