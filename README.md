@@ -20,12 +20,4 @@ The InnovateTech Solutions website is designed to showcase the services, project
 - **Project Showcase:** Displays notable projects with GitHub links.
 - **FAQs and Policies:** Provides information about privacy, terms, and frequently asked questions.
 
-## Setup
 
-To set up and run the website locally, follow these steps:
-
-1. **Clone the Repository:**
-
-   ```bash
-   git clone https://github.com/YazanZidan2001/online-store.git
-   cd online-store
