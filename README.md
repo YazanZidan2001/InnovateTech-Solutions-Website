@@ -1,23 +1,23 @@
 # InnovateTech Solutions Website
 
-## Overview
+This project is a 10-page responsive website for InnovateTech Solutions, developed using HTML5, CSS3, and reusable components. The website showcases the company's services, portfolio, and provides contact information for visitors.
 
-The InnovateTech Solutions website is designed to showcase the services, projects, and information about the company. It includes several key pages such as Home, About, Services, Projects, Portfolio, Contact Us, Privacy Policy, Terms and Conditions, and FAQs. The website is built using HTML and CSS, and it utilizes shared header and footer components for consistent navigation and branding.
 
-## Table of Contents
+## Pages Overview
 
-1. [Features](#features)
-2. [Setup](#setup)
-3. [Page Descriptions](#page-descriptions)
-4. [Contributing](#contributing)
-5. [License](#license)
+1. **Home Page (index.html)**: Provides a welcoming introduction with animations and a brief overview of InnovateTech Solutions.
+2. **About Page (about.html)**: Displays information about the company and team members using flexbox layout.
+3. **Services Page (services.html)**: Lists the services offered with hover effects and interactivity.
+4. **Projects Page (projects.html)**: Organized display of notable projects using a CSS grid layout.
+5. **Album Page (album.html)**: A responsive photo album gallery with hover effects.
+6. **Portfolio Page (portfolio.html)**: Showcases the company's portfolio using CSS animations.
+7. **Contact Page (contact.html)**: Includes a contact form and various contact methods (email, phone, GitHub, and Facebook).
+8. **Privacy Policy Page (privacy.html)**: Provides detailed privacy policy information.
+9. **Terms and Conditions Page (terms.html)**: Outlines the terms and conditions for using the website.
+10. **FAQs Page (faqs.html)**: An interactive FAQ section with CSS3 accordion effects.
 
-## Features
+## Reusable Components
 
-- **Responsive Design:** Optimized for various devices and screen sizes.
-- **Header and Footer Components:** Consistent navigation and branding across all pages.
-- **Interactive Contact Form:** Allows users to send messages without PHP.
-- **Project Showcase:** Displays notable projects with GitHub links.
-- **FAQs and Policies:** Provides information about privacy, terms, and frequently asked questions.
+- **Header and Footer**: The `header.html` and `footer.html` files are included dynamically on all pages using JavaScript (`include.js`). This ensures consistency across the website and simplifies updates.
 
 
